@@ -25,11 +25,12 @@ const transport = nodemailer.createTransport({
 app.get("/mail", async (req, res) => {
   const result = await transport.sendMail({
     from: process.env.GOOGLE_EMAIL,
-    to: "guillermofergnani@gmail.com",
-    subject: "Perdon me faltaba algo",
+    to: "francoivangalluccio@gmail.com, medina.juaan@gmail.com, fersimizu@gmail.com, joaquin.perez.coria@gmail.com, pgaman58@gmail.com",
+    subject: "Test camada 51395",
     html: `
               <div>
-                  <h1>hola mundo</h1>
+                  <h1>La mejor camada 51395!</h1>
+                  <p>pero un poco silenciosa.... hay que hablar un poco mas!!!!</p>
                   <img src="cid:image1" />
               </div>
           `,
